@@ -1,5 +1,12 @@
+/* DIFFICULTES RENCONTREES :
+*   J'ai été très confu sur quelle positions et margins/padding utiliser, due à une résolution d'écran plus petit que
+la page (Une fois sur le PC fixe de ma maison (1920x1080), j'ai rapidement trouvé comment faire)
+*   Les 2 boutons de la barre Nav ont été un calvaire à faire
+*/
+
 * {
     box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
 }
 
 main {
@@ -11,10 +18,11 @@ main {
 header {
     margin-left: 54px;
     margin-right: 54px;
-    width: 100%;
+    width: 94%;
+    background: red;
 }
 
-#upper {
+#div-upper {
     display: flex;
     justify-content: space-between;
 }
@@ -22,6 +30,8 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    width: 315px;
+    background: blue;
 }
 
 #img-logo {
@@ -37,22 +47,29 @@ nav ul {
     flex-direction: row;
     justify-content: space-evenly;
     height: 67px;
-    width: 328px;
-
-    background: yellow;
+    width: 100%;
 }
 
 .li-nav {
     display: flex;
     align-items: flex-end;
-    background: green;
-	justify-content: space-evenly;
-	white-space: nowrap;
+    justify-content: space-around;
+    width: 100%;
+}
 
+#li-hebergements {
+    position: relative;
+    left: -5%;
+    background: yellow;
+    width: 100%;
+}
+
+#li-activites {
+    background: green;
+    width: 100%;
 }
 
 h1 {
-    font-family: "Raleway", sans-serif;
     font-size: 20px;
     font-weight: 800;
 }
