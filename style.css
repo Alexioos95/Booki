@@ -1,7 +1,6 @@
 /* DIFFICULTES RENCONTREES :
-*   J'ai été très confu sur quelle positions et margins/padding utiliser, due à une résolution d'écran plus petit que
-la page (Une fois sur le PC fixe de ma maison (1920x1080), j'ai rapidement trouvé comment faire)
-*   Les 2 boutons de la barre Nav ont été un calvaire à faire
+*   J'ai eu beaucoup de mal à gérer la taille de la page dûe à une résolution d'écran plus petit que la maquette. (Une fois temporairement sur un écran 1920x1080px, ça a bien mieux été.)
+*   Les 2 boutons de la barre Nav ont été un calvaire à faire, et je suis sûr de ne pas m'y prendre correctement.
 */
 
 * {
@@ -18,8 +17,7 @@ main {
 header {
     margin-left: 54px;
     margin-right: 54px;
-    width: 94%;
-    background: red;
+    width: 92.7%;
 }
 
 #div-upper {
@@ -30,8 +28,8 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    width: 315px;
-    background: blue;
+    width: 297px;
+    height: 68px;
 }
 
 #img-logo {
@@ -41,35 +39,54 @@ nav {
     margin-top: 44px;
 }
 
-nav ul {
-    margin-top: 0;
+ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    height: 67px;
-    width: 100%;
 }
 
-.li-nav {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+nav ul {
+    margin-top: 0;
     width: 100%;
+    height: 100%;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #li-hebergements {
-    position: relative;
-    left: -5%;
-    background: yellow;
-    width: 100%;
+    border-top: 2px solid #0065FC;
+    margin-left: -40px;
+    width: 162px;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+#a-hebergements {
+    color: #0065FC;
+    font-weight: 600;
 }
 
 #li-activites {
-    background: green;
-    width: 100%;
+    width: 135px;
 }
 
 h1 {
-    font-size: 20px;
+    margin-top: 37px;
+    font-size: 22px;
     font-weight: 800;
+}
+
+#sous-titre {
+    position: relative;
+    top: -8px;
+    font-size: 16px;
+    font-weight: 500;
 }
