@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Raleway", sans-serif;
+}
+
 main {
     max-width: 1440px;
     min-width: 1440px;
@@ -63,7 +67,6 @@ nav ul li {
     margin-left: -41px;
     width: 162px;
     border-top: 2px solid #0065FC;
-    font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -76,7 +79,6 @@ a {
 #a-hebergements {
     color: #0065FC;
     font-weight: 500.2;
-    font-family: "Raleway", sans-serif;
 }
 
 #li-activites {
@@ -97,7 +99,6 @@ h1 {
     margin-top: 37px;
     font-size: 22px;
     font-weight: 700;
-    font-family: "Raleway", sans-serif;
 }
 
 h1::first-letter {
@@ -106,12 +107,9 @@ h1::first-letter {
 
 #subtitle {
     position: relative;
-    top: -7.6px;
-    font-size: 15.4px;
+    top: -8px;
+    font-size: 15.8px;
     font-weight: 400;
-    font-family: "Raleway", sans-serif;
-
-    width: 291px;
 }
 
  /* SEARCH BAR */
@@ -130,7 +128,7 @@ h1::first-letter {
     font-size: 18px;
     width: 286px;
     height: 51px;
-    margin-top: -3px;
+    margin-top: -4.2px;
     margin-left: -1px;
     border: 1px solid #F2F2F2;
     border-radius: 16px 0px 0px 16px;
@@ -141,9 +139,11 @@ h1::first-letter {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 51px;
+    width: 53px;
     height: 100px;
     background: #F2F2F2;
+    position: relative;
+    left: -1px;
 }
 
 #div-input {
@@ -161,7 +161,7 @@ input {
 
 #div-search-button {
     position: relative;
-    top: -2px;
+    top: -3px;
     height: 51px;
     width: 134px;
     border-radius: 0px 16px 16px 0px;
@@ -176,7 +176,56 @@ input {
     position: relative;
     top: -3px;
     color: white;
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
+}
+
+#div-filters {
+    display: flex;
+    flex-direction: row;
+    background: red;
+    list-style-type: none;
+    margin-top: 26px;
+    margin-left: 7.5px;
+    width: 928px;
+    height: 50px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#p-filters {
+    display: flex;
+    align-items: center;
+    width: 85px;
+    background: yellow;
+}
+
+#ul-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    width: 843px;
+    list-style-type: none;
+}
+
+.fa-solid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.li-filters {
+    display: flex;
+    flex-direction: row;
+    background: blue;
+}
+
+/* TEST */
+
+#wrap-money {
+    display: flex;
+    flex-direction: row;
 }
