@@ -2,6 +2,7 @@
 *   J'ai eu beaucoup de mal à gérer la taille de la page dûe à une résolution d'écran plus petit que la maquette.
 *   Les 2 boutons de la barre Nav ont été un calvaire à faire, et je suis sûr de ne pas m'y prendre correctement.
 *   Je n'arrive pas à faire en sorte que les textes soient exactement comme sur la maquette.
+*   Mon dieu les filtres, j'ai galérer comme pas possible... (Abandon liste, passage aux divs)
 */
 
 * {
@@ -161,7 +162,7 @@ input {
 
 #div-search-button {
     position: relative;
-    top: -3px;
+    top: -3.5px;
     height: 51px;
     width: 134px;
     border-radius: 0px 16px 16px 0px;
@@ -174,58 +175,68 @@ input {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -3px;
+    top: -3.5px;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
 }
 
-#div-filters {
+/* FILTERS */
+
+#wrap-filters {
     display: flex;
     flex-direction: row;
-    background: red;
-    list-style-type: none;
-    margin-top: 26px;
-    margin-left: 7.5px;
-    width: 928px;
+    align-items: center;
     height: 50px;
-    font-weight: 800;
-    font-size: 18px;
+    margin-top: 27px;
+    padding-left: 7px;
 }
 
-#p-filters {
-    display: flex;
-    align-items: center;
-    width: 85px;
-    background: yellow;
-}
-
-#ul-filters {
+#wrap-filters-bars {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 0px 10px 0px;
-    width: 843px;
-    list-style-type: none;
 }
 
-.fa-solid {
+h3 {
+    font-size: 19px;
+    margin-right: 28px;
+}
+
+.filters-bars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    max-height: 50px;
+
+    margin-right: 23px;
+}
+
+.fa-filters {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 19px;
+
+    color: #0065FC;
     height: 50px;
+    width: 50px;
+    background: #DEEBFF;
+
+    border-radius: 100%;
 }
 
-.li-filters {
-    display: flex;
-    flex-direction: row;
-    background: blue;
+.fa-child-reaching {
+    font-size: 21px;
 }
 
-/* TEST */
+.text-filters {
+    font-size: 17.5px;
+    font-weight: 800;
 
-#wrap-money {
-    display: flex;
-    flex-direction: row;
+    padding-left: 11px;
+    padding-right: 24px;
 }
