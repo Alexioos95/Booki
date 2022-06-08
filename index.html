@@ -16,16 +16,16 @@
     <body>
         <main>
             <header>
-                <div id="div-upper">
-                    <img id="img-logo" src="images/logo/logo.png" alt="Logo Booki"/>
-                    <nav>
-                        <ul>
-                            <li id="li-hebergements"><a id="a-hebergements" href="#hebergements">Hébergements</a></li>
-                            <li id="li-activites"><a id="a-activites" href="#activites">Activités</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <img id="img-logo" src="images/logo/logo.png" alt="Logo Booki"/>
+                <nav>
+                    <ul>
+                        <li id="li-hebergements"><a id="a-hebergements" href="#hebergements"><span id="span-hebergements">Hébergements</span></a></li>
+                        <li id="li-activites"><a id="a-activites" href="#activites"><span id="span-activites">Activités</span></a></li>
+                    </ul>
+                </nav>
+            </header>
 
+            <section id="upper-section">
                 <div id="div-title">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p id="subtitle">En plein centre ville ou en pleine nature</p>
@@ -54,23 +54,26 @@
 
                         <div class="filters-bars">
                             <i class="fa-solid fa-filters fa-child-reaching"></i>
-                            <p class="text-filters">Familial</p>
+                            <p class="text-filters" id="text-filters-family">Familial</p>
                         </div>
 
                         <div class="filters-bars">
                             <i class="fa-solid fa-filters fa-heart"></i>
-                            <p class="text-filters">Romantique</p>
+                            <p class="text-filters" id="text-filters-heart">Romantique</p>
                         </div>
 
                         <div class="filters-bars">
                             <i class="fa-solid fa-filters fa-dog"></i>
-                            <p class="text-filters">Animaux autorisés</p>
+                            <p class="text-filters" id="text-filters-dog">Animaux autorisés</p>
                         </div>
                     </div>
                 </div>
 
-                <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
-            </header>
+                <div id="div-info">
+                    <i class="fa-solid fa-info"></i> 
+                    <p id="text-info">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>  
+            </section>
 
             <footer>
 
