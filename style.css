@@ -16,7 +16,6 @@ body {
 
 main {
     max-width: 1440px;
-    min-width: 1440px;
     margin: auto;
 }
 
@@ -28,10 +27,9 @@ header {
 
     margin-left: 55px;
     margin-right: 55px;
-    width: 1340px;
 }
 
- #img-logo {
+.img-logo {
     margin-top: 44px;
     margin-left: 14.4px;
     width: 96px;
@@ -59,7 +57,7 @@ nav ul li {
     align-items: flex-end;
 }
 
-#li-hebergements {
+.li-hebergements {
     display: flex;
     justify-content: center;
     margin-left: -39.5px;
@@ -74,7 +72,7 @@ a {
     text-decoration: none;
 }
 
-#a-hebergements {
+.a-hebergements {
     display: block;
     height: 100%;
     width: 100%;
@@ -82,27 +80,27 @@ a {
     font-weight: 500;
 }
 
-#span-hebergements {
+.span-hebergements {
     display: flex;
     justify-content: center;
     padding-top: 47px;
     padding-left: 6px;
 }
 
-#li-activites {
+.li-activites {
     display: flex;
     justify-content: center;
     width: 150px;
 }
 
-#a-activites {
+.a-activites {
     display: block;
     height: 100%;
     width: 100%;
     font-weight: 500.2;
 }
 
-#span-activites {
+.span-activites {
     display: flex;
     justify-content: center;
     padding-top: 48px;
@@ -110,17 +108,17 @@ a {
     font-size: 16px;
 }
 
-#li-activites:hover {
+.li-activites:hover {
     border-top: 2px solid #0065FC;
 }
 
-#a-activites:hover {
+.a-activites:hover {
     color: #0065FC;
 }
 
 /*** UPPER SECTION : (SUB)TITLE + SEARCH BAR + FILTERS ***/
 
-#upper-section {
+.upper-section {
     margin-left: 55px;
     margin-right: 54px;
 }
@@ -137,7 +135,7 @@ h1::first-letter {
     letter-spacing: -2px;
 }
 
-#subtitle {
+.subtitle {
     position: relative;
     top: -8px;
     font-size: 15.8px;
@@ -146,12 +144,12 @@ h1::first-letter {
 
  /* SEARCH BAR */
 
-#wrap-search-bar {
+.wrap-search-bar {
     display: flex;
     flex-direction: row;
 }
 
-#search-bar {
+.search-bar {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -178,7 +176,7 @@ h1::first-letter {
     background: #F2F2F2;
 }
 
-#div-input {
+.div-input {
     min-width: 233.3px;
 }
 
@@ -191,7 +189,7 @@ input {
     outline: none;
 }
 
-#div-search-button {
+.div-search-button {
     position: relative;
     top: -3.5px;
     height: 51px;
@@ -201,7 +199,7 @@ input {
     overflow: hidden;
 }
 
-#search-button {
+.search-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,7 +212,7 @@ input {
 
 /* FILTERS */
 
-#wrap-filters {
+.wrap-filters {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -223,7 +221,7 @@ input {
     padding-left: 7px;
 }
 
-#wrap-filters-bars {
+.wrap-filters-bars {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -275,21 +273,21 @@ h3 {
     padding-right: 24px;
 }
 
-#text-filters-family {
+.text-filters-family {
     padding-right: 22px;
 }
 
-#text-filters-heart {
-    padding-right: 17px;
+.text-filters-heart {
+    padding-right: -5px;
 }
 
-#text-filters-dog {
+.text-filters-dog {
     padding-right: 21.5px;
 }
 
 /* INFO */
 
-#div-info {
+.div-info {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -309,7 +307,7 @@ h3 {
     border-radius: 100%;
 }
 
-#text-info {
+.text-info {
     padding-left: 11px;
     font-size: 16px;
     font-weight: 500;
@@ -342,7 +340,7 @@ h3 {
         flex-direction: column;
         margin: 0;
     }
-    #img-logo {
+    .img-logo {
         margin-top: 22px;
         margin-left: 30px;
     }
@@ -352,7 +350,7 @@ h3 {
     ul {
         padding: 0;
     }
-    #li-hebergements {
+    .li-hebergements {
         width: 187.5px;
         height: 35px;
         margin-top: 28.5px;
@@ -363,29 +361,29 @@ h3 {
         margin-left: 0;
         background: red;
     }
-    #li-activites {
+    .li-activites {
         width: 187.5px;
         height: 35px;
         margin-top: 28.5px;
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
     }
-    #span-hebergements {
+    .span-hebergements {
         padding: 0;
     }
-    #span-activites {
+    .span-activites {
         padding: 0;
         font-weight: 400;
     }
-    #li-activites:hover {
+    .li-activites:hover {
         border-top: none;
         border-bottom: 3px solid #0065FC;
     }
-    #upper-section {
+    .upper-section {
         margin: 0;
     }
     h1 {
         height: 80px;
         width: 300px;
     }
-}
+}   
