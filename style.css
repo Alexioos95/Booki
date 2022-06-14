@@ -17,6 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding-left: 54px;
+    padding-right: 54px;
 }
 
 .img-logo {
@@ -25,37 +26,19 @@ header {
     width: 96px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 24.8%;
-}
-
 nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
     display: flex;
     flex-direction: row;
     margin-top: 0;
 }
 
-nav ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
 .li-hebergements {
-    display: flex;
-    justify-content: center;
     margin-left: -15%;
-    width: 69%;
+    width: 162px;
     border-top: 2px solid #0065FC;
-}
-
-a {
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
 }
 
 .a-hebergements {
@@ -64,6 +47,7 @@ a {
     width: 100%;
     color: #0065FC;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .span-hebergements {
@@ -77,20 +61,24 @@ a {
     display: flex;
     justify-content: center;
     width: 150px;
+    border-top: 2px solid white;
 }
 
 .a-activites {
     display: block;
     height: 100%;
     width: 100%;
+    color: black;
+    font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .span-activites {
     display: flex;
     justify-content: center;
     padding-top: 49px;
-    padding-left: 16px;
+    padding-left: 13px;
     font-size: 15.5px;
 }
 
@@ -105,8 +93,8 @@ a {
 /** UPPER SECTION : (SUB)TITLE + SEARCH BAR + FILTERS **/
 
 .upper-section {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 54px;
+    padding-right: 54px;
 }
 
  /* TITLE + SUBTITLE */
@@ -193,13 +181,15 @@ input {
     font-size: 18px;
     color: white;
     background: #0065FC;
+    cursor: pointer;
 }
 
 .search-button-phone {
     display: none;
+    cursor: pointer;
 }
 
-/* FILTERS */
+ /* FILTERS */
 
 .wrap-filters {
     display: flex;
@@ -284,7 +274,7 @@ h3 {
     padding-right: 22px;
 }
 
-/* INFO */
+ /* INFO */
 
 .div-info {
     display: flex;
@@ -316,9 +306,11 @@ h3 {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .container {
-        max-width: 768px;
+        max-width: 900px;
     }
-
+    body {
+        background: red;
+    }
 }
 
 /*** MEDIA QUERIES PHONES ***/
@@ -334,7 +326,7 @@ h3 {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 0;
+        background: red;
         padding: 0;
     }
     .img-logo {
@@ -343,6 +335,9 @@ h3 {
     }
     nav {
         width: 100%;
+        justify-content: flex-end;
+
+        background: green;
     }
     ul {
         padding: 0;
@@ -378,7 +373,6 @@ h3 {
 /** UPPER SECTION : (SUB)TITLE + SEARCH BAR + FILTERS **/
     .upper-section {
         margin: 0;
-        margin-right: 0;
         padding-left: 10px;
     }
 /* TITLE + SUBTITLE */   
@@ -395,9 +389,7 @@ h3 {
     .wrap-search-bar {
         margin-top: 32px;
         margin-left: 3px;
-    }
-    .fa-location-dot  {
-        margin-left: -5px;
+        max-width: 333px;
     }
     .search-bar {
         min-width: 296px;
@@ -405,7 +397,7 @@ h3 {
     .div-search-button {
         min-width: 52px;
         margin-left: -20px;
-    border-radius: 16px 16px 16px 16px;
+        border-radius: 16px 16px 16px 16px;
     }
     .search-button {
         display: none;
@@ -414,14 +406,14 @@ h3 {
         display: block;
     }
     input[type="submit"] {
-      font-family: 'Font Awesome 6 Free';
-      font-weight: 900;
-      font-size: 17px;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      color: white;
-      background: #0065FC;
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        font-size: 17px;
+        color: white;
+        background: #0065FC;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
     }
 /* FILTERS */
     .wrap-filters {
