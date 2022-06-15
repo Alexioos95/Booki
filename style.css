@@ -34,7 +34,6 @@ nav ul {
 }
 
 .li-hebergements {
-    margin-left: -15%;
     width: 162px;
     border-top: 2px solid #0065FC;
 }
@@ -116,7 +115,6 @@ h1::first-letter {
     display: flex;
     align-items: center;
     margin-top: -4.4px;
-    margin-left: -1px;
     width: 286px;
     height: 51px;
     border: 1px solid #F2F2F2;
@@ -335,7 +333,6 @@ h3 {
     }
     .span-activites {
         padding: 0;
-        margin-left: -5px;
         font-weight: 500;
     }
     .li-activites:hover {
