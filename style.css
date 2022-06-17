@@ -1,5 +1,8 @@
-/*
-Probleme Margin % filters*/
+/* PROBLEMES
+MARGIN % FILTERS
+ESTHITIQUE FILTERS TABLETS
+FLEX WRAP HEBERGEMENTS CARDS */
+
 * {
     box-sizing: border-box;
 }
@@ -96,7 +99,7 @@ h1 {
     align-items: center;
     margin-top: -4.4px;
     height: 51px;
-    width: 23.5%;
+    width: 23.9%;
     border: 1px solid #F2F2F2;
     border-radius: 16px 0px 0px 16px;
     font-size: 18px;
@@ -114,6 +117,7 @@ h1 {
 
 input {
     padding-left: 15.4px;
+    width: 100%;
     font-size: 18.4px;
     font-weight: 800;
     font-family: "Raleway", sans-serif;
@@ -165,7 +169,7 @@ input {
     width: 100%;
 }
 
-h3 {
+.h3-filtres {
     font-size: 18px;
     font-weight: 800;
     margin-top: 15px;
@@ -248,7 +252,6 @@ h3 {
     font-size: 13px;
     border: 1.5px solid rgb(222,222,222);
     border-radius: 100%;
-
     margin-top: -3px;
 }
 
@@ -258,14 +261,89 @@ h3 {
     font-weight: 500;
 }
 
+/** MIDDLE SECTIONS : HEBERGEMENTS + POPULAIRES **/
+
+.middle-sections {
+    display: flex;
+    margin-left: -6px;
+    margin-top: 22px;
+    gap: 3.2%;
+}
+
+h2 {
+    font-size: 21.6px;
+    font-weight: 800;
+    margin-left: 3.3%;
+}
+
+/* SECTION HEBERGEMENTS */
+
+.wrap-hebergements {
+    background: #F2F2F2;
+    width: 66%;
+    border-radius: 23px;
+    padding-top: 26px;
+}
+
+.wrap-div-hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.div-hebergements {
+    background: white;
+    width: 243px;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.figure-hebergements {
+    background: red;
+    height: 114px;
+    margin: 0;
+    border-radius: 20px 20px 0px 0px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* SECTION POPULAIRES */
+
+.section-populaires {
+    background: #F2F2F2;
+    width: 33%;
+}
+
+.populaires-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star {
+    font-size: 20px;
+}
+
+.blue-star {
+    color: #0065FC;
+}
+
+.gray-star {
+    color: #F2F2F2;
+}
+
 /*** MEDIA QUERIES TABLETS ***/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .container {
-        max-width: 768px;
-    }
     body {
         background: red;
+    }
+    .search-bar {
+        min-width: 40%;
     }
 }
 
@@ -273,7 +351,6 @@ h3 {
 
 @media screen and (max-width: 767px) { 
     .container {
-        max-width: 375px;
         padding: 0;
     }
 /* HEADER */
@@ -321,7 +398,6 @@ h3 {
 /* TITLE + SUBTITLE */   
     h1 {
         height: 50px;
-        width: 300px;
         margin-top: 16.5px;
         margin-bottom: 0px;
     }   
@@ -358,7 +434,7 @@ h3 {
         color: white;
         background: #0065FC;
         height: 100%;
-        margin-left: 0;
+        padding: 0;
     }
 /* FILTERS */
     .wrap-filters {
@@ -372,7 +448,6 @@ h3 {
         margin-bottom: 15px;
     }
     .wrap-filters-bars {
-        max-width: 374px;
         flex-wrap: wrap;
         margin-left: -7px;
     }
@@ -401,12 +476,11 @@ h3 {
         padding: 0;
         display: flex;
         align-items: center;
-        margin-top: 8px;
-        width: 100%;
+        margin-top: 6px;
     }
     .fa-info {
-        height: 25px;
-        width: 35px;
+        height: 23px;
+        width: 30px;
         margin-top: -20px;
     }
     .text-info {
