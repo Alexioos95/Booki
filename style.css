@@ -1,7 +1,6 @@
 /* PROBLEMES
 MARGIN % FILTERS
-ESTHITIQUE FILTERS TABLETS
-FLEX WRAP HEBERGEMENTS CARDS */
+ESTHETIQUE FILTERS TABLETS */
 
 * {
     box-sizing: border-box;
@@ -14,7 +13,7 @@ body {
 .container {
     max-width: 1440px;
     padding-left: 55px;
-    padding-right: 55px;
+    padding-right: 50px;
     margin: autoZ;
 }
 
@@ -77,7 +76,7 @@ nav ul {
 h1 {
     margin-top: 38px;
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .subtitle {
@@ -99,7 +98,8 @@ h1 {
     align-items: center;
     margin-top: -4.4px;
     height: 51px;
-    width: 23.9%;
+    width: 22.12%;
+    min-width: 235px;
     border: 1px solid #F2F2F2;
     border-radius: 16px 0px 0px 16px;
     font-size: 18px;
@@ -265,67 +265,39 @@ input {
 
 .middle-sections {
     display: flex;
-    margin-left: -6px;
+    margin-left: -5px;
     margin-top: 22px;
-    gap: 3.2%;
+    gap: 3.1%;
 }
 
 h2 {
     font-size: 21.6px;
     font-weight: 800;
-    margin-left: 3.3%;
+    margin: 44px 0px 22px 40px;
 }
 
-/* SECTION HEBERGEMENTS */
-
-.wrap-hebergements {
-    background: #F2F2F2;
-    width: 66%;
-    border-radius: 23px;
-    padding-top: 26px;
-}
-
-.wrap-div-hebergement {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.div-hebergements {
-    background: white;
-    width: 243px;
-    border-radius: 20px;
-    padding: 5px;
-    margin-bottom: 40px;
-}
-
-.figure-hebergements {
-    background: red;
-    height: 114px;
+.text-card {
+    padding-left: 11px;
     margin: 0;
-    border-radius: 20px 20px 0px 0px;
+    margin-top: 5px;
 }
 
-h3 {
+.h3-card {
     font-size: 16px;
     font-weight: 800;
+    margin-top: 12px;
 }
 
-/* SECTION POPULAIRES */
-
-.section-populaires {
-    background: #F2F2F2;
-    width: 33%;
-}
-
-.populaires-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.p-card {
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .fa-star {
-    font-size: 20px;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-right: -3px;
+    margin-bottom: 7px;
 }
 
 .blue-star {
@@ -336,6 +308,51 @@ h3 {
     color: #F2F2F2;
 }
 
+/* SECTION HEBERGEMENTS ONLY */
+
+.wrap-hebergements {
+    background: #F2F2F2;
+    width: 69.2%;
+    border-radius: 23px;
+}
+
+.wrap-div-hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5%;
+}
+
+.div-hebergements {
+    background: white;
+    width: 246px;
+    border-radius: 20px;
+    padding: 5px 5px 0px 5px;
+    margin-bottom: 40px;
+}
+
+.figure-hebergements {
+    background: red;
+    height: 113px;
+    margin: 0;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/* SECTION POPULAIRES */
+
+.section-populaires {
+    background: #F2F2F2;
+    width: 33%;
+
+    background: green;
+}
+
+.populaires-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /*** MEDIA QUERIES TABLETS ***/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -343,7 +360,7 @@ h3 {
         background: red;
     }
     .search-bar {
-        min-width: 40%;
+        width: 34%;
     }
 }
 
@@ -442,7 +459,7 @@ h3 {
         align-items: flex-start;
         margin-top: 30px;
     }
-    h3 {
+    .h3-filtres {
         margin-top: 0;
         margin-left: -5px;
         margin-bottom: 15px;
