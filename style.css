@@ -254,26 +254,13 @@ input {
 h2 {
     font-size: 21.8px;
     font-weight: 800;
-    margin: 43px 0px 23px 5%;
-}
-
-.article-cards {
-    background: white;
-    border-radius: 20px;
-    padding: 5px 5px 0px 5px;
-    box-shadow: 0px 3px 7px 2px #BDBDBD;    
-}
-
-.text-card {
-    padding-left: 2.5%;
-    margin: 0;
-    margin-top: 5px;
+    margin: 43px 0px 23px 4.5%;
 }
 
 .h3-card {
     font-size: 16px;
     font-weight: 800;
-    margin-top: 12px;
+    margin-top: 6px;
 }
 
 .p-card {
@@ -285,7 +272,7 @@ h2 {
     font-size: 11.7px;
     margin-top: 6px;
     margin-right: -3px;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
 }
 
 .blue-star {
@@ -309,8 +296,8 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .a-card-hebergements {
@@ -320,12 +307,30 @@ h2 {
     min-width: 200px;
 }
 
+.article-cards-hebergements {
+    background: white;
+    border-radius: 20px;
+    padding: 5px 5px 0px 5px;
+    box-shadow: 0px 3px 7px 2px #BDBDBD;    
+}
+
 .object-fit-hebergements {
     width: 100%;
     height: 113px;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
     object-fit:cover;
+}
+
+.text-card-hebergements {
+    padding-left: 4.4%;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.padding-star {
+    padding-left: 10px;
+    margin-top: 10px;
 }
 
 .show-more {
@@ -346,11 +351,11 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 3.5% 0px 1%;
+    padding: 0px 10% 0px 4.5%;
 }
 
 .title-star {
-    font-size: 20px;
+    font-size: 21px;
     margin-top: 29px;
 }
 
@@ -358,17 +363,23 @@ h2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     gap: 30px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.a-card-populaires {
+    flex: 1 0 100%;
+    text-decoration: none;
+    color: black;
 }
 
 .article-cards-populaires {
     display: flex;
     background: white;
     border-radius: 20px;
-    padding: 5px 5px 0px 5px;
+    padding: 5px 0px 5px 5px;
     box-shadow: 0px 3px 7px 2px #BDBDBD;    
 }
 
@@ -382,6 +393,7 @@ h2 {
 
 .text-card-populaires {
     flex-direction: column;
+    padding-left: 20px
 }
 
 /*** MEDIA QUERIES TABLETS ***/
