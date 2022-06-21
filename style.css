@@ -1,3 +1,7 @@
+/*
+PROBLEME LOGO INFO PHONE
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -254,13 +258,14 @@ input {
 h2 {
     font-size: 21.8px;
     font-weight: 800;
-    margin: 43px 0px 23px 4.5%;
+    margin: 43px 0px 23px 0px;
 }
 
-.h3-card {
-    font-size: 16px;
-    font-weight: 800;
-    margin-top: 6px;
+.article-cards {
+    background: white;
+    border-radius: 20px;
+    padding: 5px 5px 0px 5px;
+    box-shadow: 0px 3px 7px 2px #BDBDBD;    
 }
 
 .p-card {
@@ -289,6 +294,8 @@ h2 {
     background: #F2F2F2;
     width: 69.2%;
     border-radius: 23px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .wrap-cards-hebergements {
@@ -296,8 +303,6 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .a-card-hebergements {
@@ -305,13 +310,6 @@ h2 {
     text-decoration: none;
     color: black;
     min-width: 200px;
-}
-
-.article-cards-hebergements {
-    background: white;
-    border-radius: 20px;
-    padding: 5px 5px 0px 5px;
-    box-shadow: 0px 3px 7px 2px #BDBDBD;    
 }
 
 .object-fit-hebergements {
@@ -328,9 +326,16 @@ h2 {
     margin-top: 5px;
 }
 
-.padding-star {
-    padding-left: 10px;
-    margin-top: 10px;
+.h3-card-hebergements {
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 6px;
+}
+
+
+.wrap-stars-hebergements {
+    padding-left: 4.2%;
+    margin-top: 2px;
 }
 
 .show-more {
@@ -345,13 +350,15 @@ h2 {
     background: #F2F2F2;
     width: 33%;
     border-radius: 23px;
+    padding: 0px 20px 0px 20px;
 }
+
+ /* TITLE */
 
 .populaires-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 10% 0px 4.5%;
 }
 
 .title-star {
@@ -359,18 +366,15 @@ h2 {
     margin-top: 29px;
 }
 
+ /* CARDS */
+
 .wrap-cards-populaires {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
     gap: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .a-card-populaires {
-    flex: 1 0 100%;
     text-decoration: none;
     color: black;
 }
@@ -379,21 +383,42 @@ h2 {
     display: flex;
     background: white;
     border-radius: 20px;
-    padding: 5px 0px 5px 5px;
-    box-shadow: 0px 3px 7px 2px #BDBDBD;    
+    padding: 5px;
+    box-shadow: 0px 3px 7px 2px #BDBDBD;  
+    max-height: 170px;
+
+    position: relative;
 }
 
 .object-fit-populaires {
-    width: 37.3%;
-    height: 113px;
+    max-width: 120px;
+    min-width: 120px;
+    min-height: 132px;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
-    object-fit:cover;
+    object-fit: cover;
+}
+
+.image-bleu {
+    max-height: 132px;
 }
 
 .text-card-populaires {
+    padding-left: 3%;
+    display: flex;
     flex-direction: column;
-    padding-left: 20px
+    justify-content: space-between;
+}
+
+.h3-card-populaires {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.p-card-populaires {   
+    margin: 0;
 }
 
 /*** MEDIA QUERIES TABLETS ***/
@@ -522,13 +547,13 @@ h2 {
         font-size: 16px;
         font-weight: 700;
     }
-
 /* INFO */
     .div-info {
         padding: 0;
         display: flex;
         align-items: center;
         margin-top: 6px;
+        max-width: 90%;
     }
     .fa-info {
         height: 23px;
@@ -538,5 +563,38 @@ h2 {
     .text-info {
         padding-left: 10px;
         font-weight: 500;
+    }
+/** MIDDLE SECTIONS : HEBERGEMENTS + POPULAIRES **/
+    .middle-sections {
+        flex-direction: column-reverse;
+    }
+/* SECTION POPULAIRES ONLY */
+    .wrap-populaires {
+       width: 100%;
+       border-radius: 0px;
+   }
+ /* TITLE */
+    .populaires-title {
+        margin-left: 15px;
+    }
+   /* CARDS */
+    .wrap-cards-populaires {
+        gap: 10px;
+        padding: 3px 20px 37px 20px;
+        margin-left: 3.5%;
+        margin-right: 5.3%;
+    }
+/* SECTION HEBERGEMENTS ONLY */
+    .wrap-hebergements {
+        background: white;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .wrap-cards-hebergements {
+        gap: 12px;
+        margin-top: -2px;
+    }
+    .show-more {
+    margin-top: 33px;
     }
 }
