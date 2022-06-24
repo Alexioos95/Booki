@@ -161,6 +161,8 @@ input {
 .wrap-filters-bars {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    gap: 2%;
 }
 
 .h3-filtres {
@@ -174,7 +176,7 @@ input {
     align-items: center;
     white-space: nowrap;
     max-height: 50px;
-    margin: 0px 24px 5px 0px;
+    margin-bottom: 5px;
     border: 2px solid rgb(222,222,222);
     border-radius: 25px;
     transition: ease-in-out 0.24s;
@@ -276,12 +278,16 @@ h2 {
     color: rgb(222,222,222);
 }
 
+.bold-text {
+    font-weight: 800;
+}
+
  /* SECTION HEBERGEMENTS ONLY */
 
 .wrap-hebergements {
     background: #F2F2F2;
-    width: 69.2%;
-    border-radius: 23px;
+    width: 67.8%;
+    border-radius: 20px;
     padding: 0px 40px 0px 40px;
 }
 
@@ -331,9 +337,9 @@ h2 {
 
 .wrap-populaires {
     background: #F2F2F2;
-    width: 33%;
-    border-radius: 23px;
-    padding: 0px 40px 0px 40px;
+    width: 32.2%;
+    border-radius: 20px;
+    padding: 0px 36px 0px 36px;
 }
 
  /* TITLE */
@@ -355,7 +361,8 @@ h2 {
 .wrap-cards-populaires {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 18px;
+    margin-top: 3px;
 }
 
 .article-cards-populaires {
@@ -368,7 +375,7 @@ h2 {
 }
 
 .object-fit-populaires {
-    width: 36.3%;
+    width: 37.8%;
     height: 145px;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
@@ -377,10 +384,10 @@ h2 {
 
 .text-card-populaires {
     display: flex;
-    width: 63.7%;
+    width: 62.2%;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 3%;
+    padding-left: 6%;
 }
 
 .h3-card-populaires {
@@ -396,12 +403,35 @@ h2 {
 
 /** LOWER SECTION : ACTIVITES **/
 
-    .lower-section {
-        background: red;
-    }
+.lower-section {
+    margin: 60px 0px 60px -5px;
+}
 
 .wrap-cards-activites {
     display: flex;
+    gap: 43px;
+}
+
+.a-card-activites {
+    width: 302px;
+    height: 446px;
+    border-radius: 30px;
+
+    background: red;
+}
+
+.a-card-activites-column {
+    width: 299px;
+    background: green;
+    border-radius: 30px;
+}
+
+.object-fit-activites {
+    width: 302px;
+    height: 390px;
+    border-radius: 30px 30px 0px 0px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 /*** MEDIA QUERIES TABLETS ***/
@@ -468,12 +498,16 @@ h2 {
         border-top: none;
     }
     .a-hebergements {
-        padding: 0px 0px 13px 25%;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px 13px 0px;
         margin: 32px 0px 0px 0px;
         border-bottom: 3px solid #0065FC;
     }
     .a-activites {
-        padding: 0px 0px 11px 35%;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px 11px 0px;
         margin-top: 32px;
         border-bottom: 3px solid #F2F2F2;
     }
