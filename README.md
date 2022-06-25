@@ -10,9 +10,11 @@ Projet n°2 a réaliser lors de la formation de Développeur Web chez OpenClassr
 Vous trouverez des versions PNG dans la partie "Liens".
 - Développement en Desktop First.
 - Breakpoints : 992px pour les ordinateurs, 768px pour les tablettes, et tout ce qui est en dessous, pour les téléphones. (Seulement 2 Media Queries, pas plus)
-- Police : Raleway.
 - Interdiction d'utiliser : REM, EM, Grid, Frameworks (Bootstrap, Tailwind...), Préprocesseur (Sass, Less...) et JavaScript.
 - Utiliser Flexbox dès que possible.
+- 3 mois maximum pour apprendre le HTML et CSS, et réaliser ce projet.
+
+- Police : Raleway.
 - Les 2 boutons de la barre de navigation doivent être fonctionnels.
 - Le bouton "Activités" de la barre de navigation doit devenir similaire au "Hébergements" au survol.
 - Champ de recherche doit être utilisable.
@@ -28,7 +30,7 @@ Vous trouverez des versions PNG dans la partie "Liens".
 
 ### Construit avec
 
-- HTML5 en sémantique
-- CSS3
-- Flexbox
-- Media Queries
+- HTML 5 en sémantique.
+- CSS 3.
+- Flexbox.
+- Media Queries.
