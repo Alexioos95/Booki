@@ -17,8 +17,8 @@ Vous trouverez des versions PNG dans la partie "Liens".
 - Police : Raleway.
 - Les 2 boutons de la barre de navigation doivent être fonctionnels.
 - Le bouton "Activités" de la barre de navigation doit devenir similaire au "Hébergements" au survol.
-- Champ de recherche doit être utilisable.
-- Chaque "carte" doit être cliquable dans son entièreté.
+- Le champ de recherche doit être utilisable, mais pas le bouton de soumission.
+- Chaque "carte" doit être cliquable dans son intégralité.
 - Les filtres et "cartes" doivent changer d'apparence au survol. (Libre de chosir l'effet)
 - Utiliser Object-fit pour les "cartes".
 
