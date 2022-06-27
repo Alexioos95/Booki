@@ -260,7 +260,7 @@ h2 {
     box-shadow: 0px 3px 7px 2px #BDBDBD;    
 }
 
-.p-card {
+.p-cards {
     font-size: 14px;
     font-weight: 500;
 }
@@ -298,9 +298,10 @@ h2 {
     gap: 30px;
 }
 
-.a-card-hebergements {
+.a-cards-hebergements {
     flex: 1 0 30%;
     min-width: 200px;
+    border-radius: 20px;
 }
 
 .object-fit-hebergements {
@@ -311,12 +312,12 @@ h2 {
     object-fit: cover;
 }
 
-.text-card-hebergements {
+.text-cards-hebergements {
     padding-left: 4.4%;
     margin: 5px 0px 0px 0px;
 }
 
-.h3-card-hebergements {
+.h3-cards-hebergements {
     font-size: 16px;
     font-weight: 800;
     margin-top: 6px;
@@ -365,6 +366,10 @@ h2 {
     margin-top: 3px;
 }
 
+.a-cards-populaires {
+    border-radius: 20px;    
+}
+
 .article-cards-populaires {
     display: flex;
     background: white;
@@ -376,13 +381,13 @@ h2 {
 
 .object-fit-populaires {
     width: 37.8%;
-    height: 145px;
+    height: 146px;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
     object-fit: cover;
 }
 
-.text-card-populaires {
+.text-cards-populaires {
     display: flex;
     width: 62.2%;
     flex-direction: column;
@@ -390,14 +395,14 @@ h2 {
     padding-left: 6%;
 }
 
-.h3-card-populaires {
+.h3-cards-populaires {
     font-size: 16px;
     font-weight: 800;
     margin: 0;
     margin-top: 12px;
 }
 
-.p-card-populaires {   
+.p-cards-populaires {   
     margin: 0;
 }
 
@@ -409,22 +414,12 @@ h2 {
 
 .wrap-cards-activites {
     display: flex;
-    flex-wrap: wrap;
     gap: 43px;
     margin-top: -2px;
 }
 
-.a-card-activites {
-    width: 22.5%;
-    border-radius: 23px;
-
-    background: red;
-}
-
-.a-card-activites-column {
-    width: 22.7%;
-    background: green;
-    border-radius: 23px;
+.parc-tablet {
+    display: none;
 }
 
 .object-fit-activites {
@@ -435,10 +430,61 @@ h2 {
     object-fit: cover;
 }
 
-.h3-card-activites {
+.h3-cards-activites {
     font-size: 16px;
     font-weight: 800;
     margin: 17px 0px 17px 6.6%;
+}
+
+.wrap-activites-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24.3%;
+    min-width: 141px;
+}
+
+.a-cards-activites {
+    width: 24.3%;
+    min-width: 241px;
+    border-radius: 23px;
+    box-shadow: 0px 3px 7px 2px #BDBDBD; 
+}
+
+.a-cards-activites-column {
+    border-radius: 23px;
+    box-shadow: 0px 3px 7px 2px #BDBDBD; 
+    overflow: hidden;
+}
+
+.object-fit-activites {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+}
+
+.object-fit-activites-image-fort {
+    width: 100%;
+    height: 181px;
+    object-fit: cover;
+}
+
+.object-fit-activites-image-iles {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+.object-fit-activites-image-dame {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.object-fit-activites-image-parc {
+    width: 100%;
+    height: 153px;
+    object-fit: cover;
 }
 
 /*** MEDIA QUERIES TABLETS ***/
@@ -469,13 +515,40 @@ h2 {
         justify-content: center;
         gap: 15px;
     }
-    .a-card-populaires {
+    .a-cards-populaires {
         flex: 1 0 30%;
         min-width: 150px;
     }
 /* SECTION HEBERGEMENTS ONLY */
     .wrap-hebergements {
         width: 100%;
+    }
+/** LOWER SECTION : ACTIVITES **/
+    .wrap-cards-activites {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .parc-pc {
+        display: none;
+    }
+    .parc-tablet {
+        display: block;
+    }
+    .wrap-activites-column {
+        flex-direction: row;
+        width: 100%;
+        gap: 20px;
+    }
+    .a-cards-activites, .wrap-activites-column, .a-cards-activites-column {
+        width: 48.2%;
+    }
+    .object-fit-activites {
+        height: 100px;
+        object-position: bottom;
+    }
+    .object-fit-activites-image-fort, .object-fit-activites-image-iles, .object-fit-activites-image-dame, .object-fit-activites-image-parc {
+        height: 100px;
     }
 }
 
@@ -628,6 +701,28 @@ h2 {
         margin-top: -2px;
     }
     .show-more {
-        margin-top: 33px;
+        margin: 33px 0px 15px 0px;
+    }
+/** LOWER SECTION : ACTIVITES **/
+    .lower-section {
+        margin: 0px 0px 50px 0px;
+        padding: 0px 8% 0px 8%;
+    }
+    .wrap-cards-activites {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .parc-tablet {
+        display:none
+    }
+    .wrap-activites-column {
+        width: 100%;
+        gap: 24px;
+    }
+    .a-cards-activites, .a-cards-activites-column {
+        width: 100%;
+    }
+    .object-fit-activites, .object-fit-activites-image-fort, .object-fit-activites-image-iles, .object-fit-activites-image-dame, .object-fit-activites-image-parc {
+        height: 134px;
     }
 }
