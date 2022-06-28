@@ -471,7 +471,7 @@ h2 {
     width: 100%;
     height: 390px;
     object-fit: cover;
-    object-position: 50% 100%;
+    object-position: 50% 10%;
 }
 
 .object-fit-activites-image-fort {
@@ -486,6 +486,10 @@ h2 {
     height: 110px;
     object-fit: cover;
     object-position: 50% 20%;
+}
+
+.parc-pc {
+    object-position: 50% 13%;   
 }
 
 .object-fit-activites-image-dame {
