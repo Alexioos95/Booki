@@ -9,12 +9,12 @@ Script FontAwesome
 
 body {
     font-family: "Raleway", sans-serif;
+    margin: autoZ;
 }
 
 .container {
     max-width: 1440px;
     padding: 0px 50px 0px 55px;
-    margin: autoZ;
 }
 
 a {
@@ -509,16 +509,16 @@ h2 {
 /** FOOTER **/
 
 footer {
+    max-width: 1440px;
+    padding: 0px 50px 0px 55px;
     display: flex;
     background: #F2F2F2;
-    max-width: 1440px;
     gap: 15px;
 }
 
 .div-footer {
     width: 100%;
-    padding-top: 26px;
-    padding-bottom: 36px;
+    padding: 26px 0px 36px 0px;
 }
 
 div ul li {
@@ -764,5 +764,19 @@ div ul li {
     }
     .object-fit-activites, .object-fit-activites-image-fort, .object-fit-activites-image-iles, .object-fit-activites-image-dame, .object-fit-activites-image-parc {
         height: 134px;
+    }
+
+/** FOOTER **/
+    footer {
+        flex-direction: column;
+        padding: 26px 8% 25px 8%;
+    }
+    .div-footer {
+        padding: 0;
+    }
+    div ul li {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 13px;
     }
 }
