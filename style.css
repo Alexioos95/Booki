@@ -1,7 +1,3 @@
-/*
-Adding effects
-*/
-
 * {
     box-sizing: border-box;
 }
@@ -53,7 +49,6 @@ nav ul {
     padding: 47px 23px 0px 28px;
     color: #0065FC;
     font-weight: 500;
-    text-decoration: none;
 } 
 
 .li-activites {
@@ -101,11 +96,11 @@ h1 {
 .search-bar {
     display: flex;
     align-items: center;
+    font-size: 18px;
     height: 51px;
     width: 22.12%;
     min-width: 235px;
     margin-top: -4.4px;
-    font-size: 18px;
     border: 1px solid #F2F2F2;
     border-radius: 16px 0px 0px 16px;
     overflow: hidden;
@@ -121,11 +116,10 @@ h1 {
 }
 
 input {
-    padding-left: 15.4px;
     width: 100%;
-    font-size: 18.4px;
+    padding-left: 15.4px;
+    font-size: 18px;
     font-weight: 800;
-    font-family: "Raleway", sans-serif;
     border: none;
     outline: none;
 }
@@ -145,8 +139,8 @@ input {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-weight: 600;
     font-size: 18px;
+    font-weight: 600;
     color: white;
     background: #0065FC;
     cursor: pointer;
@@ -161,7 +155,6 @@ input {
 .wrap-filters {
     display: flex;
     align-items: center;
-    width: 100%;
     margin-top: 26px;
     padding-left: 7px;
 }
@@ -200,12 +193,12 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 19px;
     height: 50px;
     width: 50px;
-    margin-left: -2px;
+    font-size: 19px;
     color: #0065FC;
     background: #DEEBFF;
+    margin-left: -2px;
     border-radius: 100%;
 }
 
@@ -214,7 +207,7 @@ input {
 }
 
 .text-filters {
-    font-size: 17.5px;
+    font-size: 18px;
     font-weight: 800;
     margin: 4px 20px 0px 12px;
 }
@@ -235,8 +228,8 @@ input {
     margin-top: -3px;
     height: 24px;
     width: 24px;
-    color: #0065FC;
     font-size: 13px;
+    color: #0065FC;
     border: 1.5px solid rgb(222,222,222);
     border-radius: 100%;
 }
@@ -263,9 +256,15 @@ h2 {
 
 .article-cards {
     background: white;
-    border-radius: 20px;
     padding: 5px 5px 0px 5px;
-    box-shadow: 0px 3px 7px 2px #BDBDBD;    
+    border-radius: 20px;
+    box-shadow: 0px 3px 14px 0px #d3d3d3;
+    transition: all ease-out .1s;
+}
+
+.article-cards:hover {
+    box-shadow: 0px 3px 14px 0px #787777;
+    transform: translate(0px, -4px);
 }
 
 .p-cards {
@@ -295,14 +294,14 @@ h2 {
 .wrap-hebergements {
     background: #F2F2F2;
     width: 67.8%;
-    border-radius: 20px;
     padding: 0px 40px 0px 40px;
+    border-radius: 20px;
 }
 
 .wrap-cards-hebergements {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -316,7 +315,6 @@ h2 {
     width: 100%;
     height: 113px;
     border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
     object-fit: cover;
 }
 
@@ -348,8 +346,8 @@ h2 {
 .wrap-populaires {
     background: #F2F2F2;
     width: 32.2%;
-    border-radius: 20px;
     padding: 0px 39px 0px 36px;
+    border-radius: 20px;
 }
 
  /* TITLE */
@@ -375,17 +373,23 @@ h2 {
     margin-top: 3px;
 }
 
-.a-cards-populaires {
-    border-radius: 20px;    
-}
-
 .article-cards-populaires {
     display: flex;
     background: white;
-    border-radius: 20px;
-    padding: 5px;
-    box-shadow: 0px 3px 7px 2px #BDBDBD;  
     max-height: 170px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 14px 0px #d3d3d3;
+    transition: all ease-out .1s;
+}
+
+.article-cards-populaires:hover {
+    box-shadow: 0px 3px 14px 0px #787777;
+    transform: translate(0px, -4px);
+}
+
+.a-cards-populaires {
+    border-radius: 20px;    
 }
 
 .object-fit-populaires {
@@ -398,9 +402,9 @@ h2 {
 
 .text-cards-populaires {
     display: flex;
-    width: 62.2%;
     flex-direction: column;
     justify-content: space-between;
+    width: 62.2%;
     padding-left: 5.8%;
 }
 
@@ -431,12 +435,30 @@ h2 {
     display: none;
 }
 
+.article-cards-activites {
+    height: 100%;
+}
+
+.a-cards-activites {
+    width: 24.3%;
+    min-width: 241px;
+    border-radius: 23px;
+    box-shadow: 0px 3px 14px 0px #d3d3d3;
+    transition: all ease-out .1s;
+    overflow: hidden;
+}
+
+.a-cards-activites:hover {
+    box-shadow: 0px 3px 14px 0px #787777;
+    transform: translate(0px, -4px);
+}
+
 .object-fit-activites {
     width: 100%;
     height: 390px;
     border-radius: 23px 23px 0px 0px;
-    overflow: hidden;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .h3-cards-activites {
@@ -453,18 +475,20 @@ h2 {
     min-width: 141px;
 }
 
-.a-cards-activites {
-    width: 24.3%;
-    min-width: 241px;
-    border-radius: 23px;
-    box-shadow: 0px 3px 7px 2px #BDBDBD; 
-    overflow: hidden;
+.article-cards-activites-column {
+    height: 100%;
 }
 
 .a-cards-activites-column {
     border-radius: 23px;
-    box-shadow: 0px 3px 7px 2px #BDBDBD; 
+    box-shadow: 0px 3px 14px 0px #d3d3d3;
+    transition: all ease-out .1s;
     overflow: hidden;
+}
+
+.a-cards-activites-column:hover {
+    box-shadow: 0px 3px 14px 0px #787777;
+    transform: translate(0px, -4px);
 }
 
 .object-fit-activites-image-fort {
@@ -505,8 +529,8 @@ footer {
     max-width: 1440px;
     padding: 0px 50px 0px 55px;
     display: flex;
-    background: #F2F2F2;
     gap: 15px;
+    background: #F2F2F2;
 }
 
 .div-footer {
@@ -523,9 +547,6 @@ div ul li {
 /*** MEDIA QUERIES TABLETS ***/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-        background: red;
-    }
     .search-bar {
         width: 34%;
     }
@@ -663,8 +684,8 @@ div ul li {
     }
     input[type="submit"] {
         font-family: "Font Awesome 6 Free";
-        font-weight: 900;
         font-size: 17px;
+        font-weight: 900;
         color: white;
         background: #0065FC;
         height: 100%;
@@ -714,8 +735,8 @@ div ul li {
 /* SECTION POPULAIRES ONLY */
     .wrap-populaires {
        width: 100%;
-       border-radius: 0px;
        padding: 0px 8% 0px 8%;
+       border-radius: 0px;
    }
 /* CARDS */
     .wrap-cards-populaires {
