@@ -10,7 +10,7 @@ Projet n°2 a réaliser lors de la formation de Développeur Web chez OpenClassr
 Vous trouverez des versions PNG dans la partie "Liens".
 - Breakpoints : 992px pour les ordinateurs, 768px pour les tablettes, et tout ce qui est en dessous pour les téléphones. (Seulement 2 Media Queries autorisées, pas plus.)
 - Développement en Desktop First.
-- Interdiction d'utiliser : REM, EM, Grid, Frameworks (Bootstrap, Tailwind...), Préprocesseur (Sass, Less...) et JavaScript.
+- Interdiction d'utiliser : REM, EM, Grid, Frameworks (Bootstrap, Tailwind...), Pré-processeur (Sass, Less...) et JavaScript.
 - Utiliser Flexbox dès que possible.
 - 3 mois maximum pour apprendre le HTML et CSS, et réaliser ce projet.
 - La Police d'écriture utilisée est "Raleway".
@@ -21,6 +21,7 @@ Vous trouverez des versions PNG dans la partie "Liens".
 - Les filtres et "cartes" doivent changer d'apparence au survol. (Libre de choisir l'effet)
 - Utiliser Object-fit pour les "cartes".
 - Le résultat doit être testé sur différents navigateurs.
+- Aucune erreur sur les validateurs du W3C.
 
 ### Liens
 
