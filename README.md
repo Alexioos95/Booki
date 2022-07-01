@@ -30,7 +30,4 @@ Vous trouverez des versions PNG dans la partie "Liens".
 
 ### Construit avec
 
-- HTML 5 en sémantique.
-- CSS 3.
-- Flexbox.
-- Media Queries.
+- HTML & CSS (Avec Flexbox), Media Queries.
