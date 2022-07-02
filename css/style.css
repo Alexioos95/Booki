@@ -4,12 +4,12 @@
 
 body {
     font-family: "Raleway", sans-serif;
-    margin: auto;
 }
 
 .container {
     max-width: 1440px;
     padding: 0px 50px 0px 55px;
+    margin: auto;
 }
 
 a {
@@ -523,8 +523,6 @@ h2 {
 /** FOOTER **/
 
 footer {
-    max-width: 1440px;
-    padding: 0px 50px 0px 55px;
     display: flex;
     gap: 15px;
     background: #F2F2F2;
@@ -702,7 +700,7 @@ div ul li {
         margin-left: -7px;
     }
     .filters-bars {
-        margin: 0px 11px 13px 0px;
+        margin: 0px 8px 13px 0px;
     }
     .text-filters {
         font-size: 16px;
@@ -772,6 +770,9 @@ div ul li {
     }
     .a-cards-activites, .a-cards-activites-column {
         width: 100%;
+        min-width: 1px;
+        }
+        
     }
     .object-fit-activites, .object-fit-activites-image-fort, .object-fit-activites-image-iles, .object-fit-activites-image-dame, .object-fit-activites-image-parc {
         height: 134px;
@@ -779,10 +780,9 @@ div ul li {
 /** FOOTER **/
     footer {
         flex-direction: column;
-        padding: 26px 8% 25px 8%;
     }
     .div-footer {
-        padding: 0;
+        padding: 0px 0px 0px 8%;
     }
     div ul li {
         font-size: 16px;
