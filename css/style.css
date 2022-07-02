@@ -9,7 +9,7 @@ body {
 .container {
     max-width: 1440px;
     padding: 0px 50px 0px 55px;
-    margin: autoZ;
+    margin: auto;
 }
 
 a {
@@ -527,7 +527,7 @@ footer {
     flex-direction: row;
     max-width: 1440px;
     padding: 26px 55px 36px 50px;
-    margin: autoZ;
+    margin: auto;
     gap: 20px;
     background: #F2F2F2;
 }
