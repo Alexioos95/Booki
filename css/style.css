@@ -524,13 +524,15 @@ h2 {
 
 footer {
     display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    padding: 26px 50px 36px 55px;
     gap: 15px;
     background: #F2F2F2;
 }
 
 .div-footer {
     width: 100%;
-    padding: 26px 0px 36px 0px;
 }
 
 div ul li {
@@ -709,18 +711,18 @@ div ul li {
 /* INFO */
     .div-info {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         padding: 0;
-        margin-top: 6px;
+        margin-top: 20px;
         max-width: 90%;
     }
     .fa-info {
         height: 24px;
         width: 25px;
-        margin-top: -20px;
     }
     .text-info {
         padding-left: 10px;
+        margin: 0;
         font-weight: 500;
     }
 /** MIDDLE SECTIONS : HEBERGEMENTS + POPULAIRES **/
@@ -770,9 +772,7 @@ div ul li {
     }
     .a-cards-activites, .a-cards-activites-column {
         width: 100%;
-        min-width: 1px;
-        }
-        
+        min-width: 0px;
     }
     .object-fit-activites, .object-fit-activites-image-fort, .object-fit-activites-image-iles, .object-fit-activites-image-dame, .object-fit-activites-image-parc {
         height: 134px;
@@ -780,9 +780,7 @@ div ul li {
 /** FOOTER **/
     footer {
         flex-direction: column;
-    }
-    .div-footer {
-        padding: 0px 0px 0px 8%;
+        padding: 26px 8% 32px 8%;
     }
     div ul li {
         font-size: 16px;
