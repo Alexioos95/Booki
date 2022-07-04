@@ -124,7 +124,7 @@ input {
     outline: none;
 }
 
-.div-search-button {
+form {
     position: relative;
     top: -3.5px;
     left: -10px;
@@ -227,7 +227,7 @@ input {
     align-items: center;
     margin-top: -3px;
     height: 24px;
-    width: 24px;
+    min-width: 24px;
     font-size: 13px;
     color: #0065FC;
     border: 1.5px solid rgb(222,222,222);
@@ -668,7 +668,7 @@ div ul li {
     .fa-location-dot {
         max-width: 51px;
     }
-    .div-search-button {
+    form {
         width: 51px;
         margin: -1px 0px 0px -14px;
         border-radius: 16px;
