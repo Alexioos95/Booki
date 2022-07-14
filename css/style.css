@@ -1,239 +1,195 @@
+/** GENERAL **/
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: "Raleway", sans-serif;
 }
-
 .container {
     max-width: 1440px;
     padding: 0px 50px 0px 55px;
-    margin: auto;
+    margin: autoZ;
 }
-
 a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
-
 ul {
     list-style: none;
     padding: 0;
 }
 
- /* HEADER */
-
+/** HEADER **/
 header {
     display: flex;
     justify-content: space-between;
 }
-
 .img-logo {
     margin: 44px 0px 0px 14.4px;
     width: 95.5px;
 }
-
+/* NAV */
 nav ul {
     display: flex;
-    justify-content: flex-end;
     margin-top: 0;
+    gap: 14px;
 }
-
-.li-hebergements {
-    border-top: 2px solid #0065FC;
-}
-
-.a-hebergements {
+.nav-a-hebergements {
     display: block;
+    color: #0065FC;
+    font-weight: 500;
     padding: 47px 23px 0px 28px;
-    color: #0065FC;
-    font-weight: 500;
-}
-
-.li-activites {
-    border-top: 2px solid transparent;
-}
-
-.a-activites {
-    display: block;
-    padding: 44px 28px 3px 42px;
-    font-weight: 500;
-    border-top: 2px solid transparent;
-}
-
-.li-activites:hover {
     border-top: 2px solid #0065FC;
 }
-
-.a-activites:hover {
+.nav-a-activites {
+    display: block;
+    padding: 48px 28px 0px 28px;
+    font-weight: 500;
+    border-top: 2px solid transparent;
+}
+.nav-a-activites:hover {
     color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
 
 /** UPPER SECTION : (SUB)TITLE + SEARCH BAR + FILTERS **/
- /* TITLE + SUBTITLE */
-
+/* TITLE + SUBTITLE */
 h1 {
-    margin-top: 38px;
+    margin: 38px 0px 9px 0px;
     font-size: 22px;
     font-weight: 700;
 }
-
 .subtitle {
-    position: relative;
-    top: -6px;
     font-size: 16px;
     font-weight: 500;
+    margin: 0;
 }
-
- /* SEARCH BAR */
-
-.wrap-search-bar {
+/* SEARCH BAR */
+form {
     display: flex;
-    margin-left: -1px;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
+    width: 31.5%;
+    min-width: 345px;
     height: 51px;
-    width: 22.12%;
-    min-width: 235px;
-    margin-top: -4.4px;
     border: 1px solid #F2F2F2;
-    border-radius: 16px 0px 0px 16px;
-    overflow: hidden;
+    border-radius: 16px;
+    margin: 18px 0px 0px -1px;
 }
-
 .fa-location-dot {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
     min-width: 51px;
-    min-height: 51px;
+    max-height: 51px;
+    border-radius: 15px 0px 0px 15px;
     background: #F2F2F2;
 }
-
-input {
+input { /* TYPE="TEXT"*/
     width: 100%;
-    padding-left: 15.4px;
+    padding: 3px 0px 0px 16px;
     font-size: 18px;
     font-weight: 800;
     border: none;
     outline: none;
 }
-
-.div-search-button {
-    position: relative;
-    top: -3.5px;
-    left: -10px;
-    height: 51px;
-    width: 134px;
-    border-radius: 0px 16px 16px 0px;
-    background: #0065FC;
-    overflow: hidden;
-}
-
 .search-button {
     margin: 0;
-    padding: 0;
-    height: 100%;
+    padding: 3px 0px 0px 0px;
+    height: 51px;
+    width: 247px;
     font-size: 18px;
     font-weight: 600;
     color: white;
     background: #0065FC;
+    border-radius: 0px 16px 16px 0px;
     cursor: pointer;
 }
-
 .search-button-phone {
     display: none;
 }
 
- /* FILTERS */
-
+/* FILTERS */
 .wrap-filters {
     display: flex;
     align-items: center;
-    margin-top: 26px;
+    margin-top: 31px;
     padding-left: 7px;
 }
-
 .wrap-filters-bars {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    gap: 2%;
+    gap: 5px 24px;
 }
-
-.h3-filtres {
+.title-filters {
     font-size: 18px;
     font-weight: 800;
     margin: 15px 31px 18px 0px;
 }
-
 .filters-bars {
     display: flex;
     align-items: center;
     white-space: nowrap;
-    max-height: 50px;
+    height: 50px;
     margin-bottom: 5px;
     border: 2px solid rgb(222,222,222);
     border-radius: 25px;
-    transition: ease-in-out 0.24s;
+    transition: ease-in-out 0.25s;
 }
-
 .filters-bars:hover {
     color: white;
     background: #0065FC;
     cursor: pointer;
 }
-
 .fa-filters {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -2px;
     height: 50px;
     width: 50px;
     font-size: 19px;
     color: #0065FC;
     background: #DEEBFF;
-    margin-left: -2px;
     border-radius: 100%;
 }
-
 .fa-child-reaching {
     font-size: 21px;
 }
-
 .text-filters {
     font-size: 18px;
     font-weight: 800;
     margin: 4px 20px 0px 12px;
 }
+.text-filters-fam {
+    margin-right: 18px;
+}
+.text-filters-rom {
+    margin-right: 12px;
+}
+.text-filters-ani {
+    margin-right: 17px;
+}
 
- /* INFO */
-
+/* INFO */
 .div-info {
     display: flex;
     align-items: center;
     padding-left: 4px;
     margin-top: 19px;
 }
-
 .fa-info {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -3px;
-    height: 24px;
     width: 24px;
+    height: 24px;
     font-size: 13px;
     color: #0065FC;
-    border: 1.5px solid rgb(222,222,222);
+    border: 1px solid rgb(222,222,222);
     border-radius: 100%;
 }
-
 .text-info {
     padding-left: 11px;
     font-size: 16px;
@@ -527,7 +483,7 @@ footer {
     flex-direction: row;
     max-width: 1440px;
     padding: 26px 55px 36px 50px;
-    margin: auto;
+    margin: autoZ;
     gap: 20px;
     background: #F2F2F2;
 }
@@ -545,11 +501,10 @@ div ul li {
 /*** MEDIA QUERIES TABLETS ***/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .search-bar {
-        width: 34%;
-    }
-    .wrap-filters-bars {
-        max-width: 540px;
+/** UPPER SECTION **/
+/* SEARCH BAR */
+    form {
+        width: 50%;
     }
 /** MIDDLE SECTIONS : HEBERGEMENTS + POPULAIRES **/
     .middle-sections {
@@ -610,6 +565,9 @@ div ul li {
     .container {
         padding: 0;
     }
+    .container-phone {
+        padding: 0px 19px;
+    }
 /* HEADER */
     header {
         align-items: center;
@@ -618,67 +576,54 @@ div ul li {
     .img-logo {
         margin: 21px 0px 0px 7.7%;
     }
-    nav {
-        justify-content: flex-end;
+    nav, li {
         width: 100%;
     }
-    ul {
-        padding: 0;
+    nav ul {
+        gap: 0;
     }
-    .li-hebergements, .li-activites, .li-activites:hover {
-        width: 100%;
+    .nav-a-hebergements, .nav-a-activites, .nav-a-activites:hover {
         border-top: none;
     }
-    .a-hebergements {
+    .nav-a-hebergements {
         display: flex;
         justify-content: center;
         padding: 0px 0px 13px 0px;
         margin: 32px 0px 0px 0px;
         border-bottom: 3px solid #0065FC;
     }
-    .a-activites {
+    .nav-a-activites {
         display: flex;
         justify-content: center;
-        padding: 0px 0px 11px 0px;
+        padding: 0px 0px 13px 0px;
         margin-top: 32px;
         border-bottom: 3px solid #F2F2F2;
     }
-    .a-activites:hover {
+    .nav-a-activites:hover {
         border-bottom: 3px solid #0065FC;
     }
 /** UPPER SECTION : (SUB)TITLE + SEARCH BAR + FILTERS **/
-    .upper-section {
-        margin-left: 5.3%;
-    }
 /* TITLE + SUBTITLE */
     h1 {
-        height: 50px;
-        margin: 16.5px 0px 0px 0px;
+        margin: 16.5px 0px 14px 0px;
     }
     .subtitle {
-        margin-top: 21.5px;
+        margin-bottom: 34px;
     }
 /* SEARCH BAR */
-    .wrap-search-bar {
-        margin: 32px 0px 0px 1px;
+    form {
+        margin-left: 2px;
+        width: 100%;
+        min-width: 0px;
     }
-    .search-bar {
-        width: 86.5%;
-    }
-    .fa-location-dot {
-        max-width: 51px;
-    }
-    .div-search-button {
-        width: 51px;
-        margin: -1px 0px 0px -14px;
-        border-radius: 16px;
+    input {
+        padding-bottom: 2px;
     }
     .search-button {
         display: none;
     }
     .search-button-phone {
-        display: block;
-        cursor: pointer;
+        display: initial;
     }
     input[type="submit"] {
         font-family: "Font Awesome 6 Free";
@@ -686,44 +631,46 @@ div ul li {
         font-weight: 900;
         color: white;
         background: #0065FC;
-        height: 100%;
         padding: 0;
+        margin-top: -1px;
+        height: 51px;
+        min-width: 51px;
+        width: 51px;
+        border-radius: 16px;
+        cursor: pointer;
     }
 /* FILTERS */
     .wrap-filters {
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 30px;
+        margin-top: 34px;
     }
-    .h3-filtres {
-        margin: 0px 0px 15px -5px;
+    .title-filters {
+        margin: 0px 0px 15px -4px;
     }
     .wrap-filters-bars {
         flex-wrap: wrap;
-        margin-left: -6px;
-    }
-    .filters-bars {
-        margin: 0px 8px 13px 0px;
+        margin: -1px 0px 0px -6px;
+        gap: 8px 10px;
     }
     .text-filters {
         font-size: 16px;
-        font-weight: 700;
-        margin: 4px 14px 0px 10px;
+        margin: 4px 10px 0px 10px;
+    }
+    .text-filters-rom, .text-filters-ani {
+        padding-bottom: 3px;
     }
 /* INFO */
     .div-info {
-        display: flex;
         align-items: flex-start;
-        padding: 0;
-        margin-top: 20px;
-        max-width: 90%;
+        margin: 30px 0px 0px -2px;
     }
     .fa-info {
-        height: 24px;
-        width: 25px;
+        min-height: 24px;
+        min-width: 24px;
     }
     .text-info {
-        padding-left: 10px;
+        padding-left: 9px;
         margin: 0;
         font-weight: 500;
     }

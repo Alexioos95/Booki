@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <title>Booki - Réservation d'hébergements et d'activités en location.</title>
-        <meta name="description" content="Réservez des hôtels et des activités dans vos villes favorites avec Booki, la référence dans le domaine.">
+        <meta name="description" content="Réservez des hôtels et/ou des activités dans vos villes favorites avec Booki, la référence dans le domaine.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Open Graph-->
         <!--
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Booki - Réservation d'hébergements et d'activités en location."/>
-        <meta property="og:site_name" content="Booki"/>
-        <meta property="og:description" content="Réservez des hôtels et/ou des activités dans vos villes favorites avec Booki, la référence dans le domaine."/>
-        <meta property="og:url" content="NOT SET YET"/>
-        <meta property="og:image" content="NOT SET YET"/>
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Booki - Réservation d'hébergements et d'activités en location.">
+        <meta property="og:site_name" content="Booki">
+        <meta property="og:description" content="Réservez des hôtels et/ou des activités dans vos villes favorites avec Booki, la référence dans le domaine.">
+        <meta property="og:url" content="NOT SET YET">
+        <meta property="og:image" content="NOT SET YET">
         -->
         <!--Twitter Cards-->
         <!--
@@ -24,16 +24,16 @@
         <meta name="twitter:image:alt" content="NOT SET YET">
         -->
         <!--Normalize-->
-        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/70111f5ad5.js" crossorigin="anonymous"></script>
         <!--Google Font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!--Font Raleway-->
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap" rel="stylesheet">
         <!--My CSS-->
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
     <body>
@@ -41,32 +41,28 @@
             <img class="img-logo" src="images/logo/logo.png" alt="Logo Booki"/>
             <nav>
                 <ul>
-                    <li class="li-hebergements"><a class="a-hebergements" href="#hebergements">Hébergements</a></li>
-                    <li class="li-activites"><a class="a-activites" href="#activites">Activités</a></li>
+                    <li><a class="nav-a-hebergements" href="#hebergements">Hébergements</a></li>
+                    <li><a class="nav-a-activites" href="#activites">Activités</a></li>
                 </ul>
             </nav>
         </header>
 
         <main class="container">
-            <section class="upper-section">
+            <section class="upper-section container-phone">
                 <div class="div-title">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p class="subtitle">En plein centre ville ou en pleine nature</p>
                 </div>
             
-                <div class="wrap-search-bar">
-                    <div class="search-bar">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <input type="text" value="Marseille, France"/>
-                    </div>
-                    <div class="div-search-button">
-                        <input class="search-button" type="submit" value="Rechercher"/>
-                        <input class="search-button-phone" type="submit" value="&#xf002;"/>
-                    </div>
-                </div>
+                <form method="post" action="traitement.php">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" value="Marseille, France"/>
+                    <input class="search-button" type="submit" value="Rechercher"/>
+                    <input class="search-button-phone" type="submit" value="&#xf002;"/>
+                </form>
             
                 <div class="wrap-filters">
-                    <h3 class="h3-filtres">Filtres</h3>
+                    <h3 class="title-filters">Filtres</h3>
                     <div class="wrap-filters-bars">
                         <div class="filters-bars">
                             <i class="fa-solid fa-filters fa-money-bill-wave"></i>
@@ -74,15 +70,15 @@
                         </div>
                         <div class="filters-bars">
                             <i class="fa-solid fa-filters fa-child-reaching"></i>
-                            <span class="text-filters">Familial</span>
+                            <span class="text-filters text-filters-fam">Familial</span>
                         </div>
                         <div class="filters-bars">
                             <i class="fa-solid fa-filters fa-heart"></i>
-                            <span class="text-filters">Romantique</span>
+                            <span class="text-filters text-filters-rom">Romantique</span>
                         </div>
                         <div class="filters-bars">
                             <i class="fa-solid fa-filters fa-dog"></i>
-                            <span class="text-filters">Animaux autorisés</span>
+                            <span class="text-filters text-filters-ani">Animaux autorisés</span>
                         </div>
                     </div>
                 </div>
