@@ -494,11 +494,18 @@ div ul li {
         height: 100px;
         object-position: bottom;
     }
-    .object-fit-activites-image-fort, .object-fit-activites-image-iles, .object-fit-activites-image-dame, .object-fit-activites-image-parc {
+    .object-fit-activites-image-iles, .object-fit-activites-image-dame, .object-fit-activites-image-parc {
         height: 100px;
     }
 }
 
+/*** MEDIA QUERIES PHONE - IMG ***/
+@media screen and (min-width: 440px) and (max-width: 767px) {
+    .object-fit-activites, .object-fit-activites-image-fort, .object-fit-activites-image-iles, .object-fit-activites-image-dame, .object-fit-activites-image-parc {
+        height: 134px;
+        object-position: 80% 50%;
+    }
+}
 /*** MEDIA QUERIES PHONES ***/
 @media screen and (max-width: 767px) {
     .container {
