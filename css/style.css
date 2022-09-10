@@ -494,7 +494,7 @@ div ul li {
         height: 100px;
         object-position: bottom;
     }
-    .object-fit-activites-image-iles, .object-fit-activites-image-dame, .object-fit-activites-image-parc {
+    .object-fit-activites-image-iles, .object-fit-activites-image-dame, .object-fit-activites-image-parc, .object-fit-activites-image-fort {
         height: 100px;
     }
 }
